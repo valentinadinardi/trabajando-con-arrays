@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
   const result = strangeArray.filter((element) => typeof element === "string");
   
-  showList(result.sort());
+  const nuevoArray = result.map((element) => element.toUpperCase());
+  
+  showList(nuevoArray.sort());
   })
   
